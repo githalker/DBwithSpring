@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Car</td>
+        <td>Price</td>
+        <td>Seller</td>
+        <td>Client</td>
+    </tr>
+    <tr th:each = "avtosalonList : ${avtosalonList}">
+        <td th:text="${avtosalonList.car}"></td>
+        <td th:text="${avtosalonList.price}"></td>
+        <td th:text="${avtosalonList.seller}"></td>
+        <td th:text="${avtosalonList.client}"></td>
+    </tr>
+    </tr>
+    </tr>
+</table>
+
+</body>
+</html>

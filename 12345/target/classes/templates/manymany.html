@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Service name</td>
+        <td>Car</td>
+        <td>Price</td>
+        <td>Seller</td>
+        <td>Client</td>
+    </tr>
+    <tr th:each = "joinManyManyList : ${joinManyManyList}">
+        <td th:text="${joinManyManyList.sername}"></td>
+        <td th:text="${joinManyManyList.car}"></td>
+        <td th:text="${joinManyManyList.price}"></td>
+        <td th:text="${joinManyManyList.seller}"></td>
+        <td th:text="${joinManyManyList.client}"></td>
+    </tr>
+    </tr>
+    </tr>
+</table>
+
+</body>
+</html>

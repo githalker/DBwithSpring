@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Service name</td>
+        <td>Cars</td>
+    </tr>
+    <tr th:each = "serviceList : ${serviceList}">
+        <td th:text="${serviceList.sername}"></td>
+        <td th:text="${serviceList.car1}"></td>
+        <td th:text="${serviceList.car2}"></td>
+
+
+    </tr>
+    </tr>
+    </tr>
+</table>
+
+</body>
+</html>
